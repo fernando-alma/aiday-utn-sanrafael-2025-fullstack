@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost/Hackdash-aiweekend/backend/public/';
+const API_BASE = 'http://localhost/aiday-utn-sanrafael-2025-fullstack/backend/public/';
 const CURRENT_SLUG = "hola";
 
 document.addEventListener('DOMContentLoaded', () => {
