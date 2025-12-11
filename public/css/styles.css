@@ -63,6 +63,10 @@ section {
 
 /* ------ LINKS DESKTOP ------ */
 
+.burger-btn {
+  display: none;
+}
+
 .nav-links {
   display: flex;
   gap: 24px;
@@ -155,24 +159,6 @@ section {
     padding: 20px;
     border-top: 1px solid #ddd;
     display: none;
-  }
-
-  /* Mostrar menú cuando el checkbox está activo */
-  .burger-toggle:checked ~ .nav-links {
-    display: flex;
-  }
-
-  /* Animación del burger */
-  .burger-toggle:checked + .burger-btn .burger-line:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-
-  .burger-toggle:checked + .burger-btn .burger-line:nth-child(2) {
-    opacity: 0;
-  }
-
-  .burger-toggle:checked + .burger-btn .burger-line:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
   }
 }
 
