@@ -5,26 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIDAY Los Reyunos</title>
-
+    <meta name="theme-color" content="#F17158">
     <!-- Estilos -->
     <link rel="stylesheet" href="public/css/nav-styles.css">
     <link rel="stylesheet" href="public/css/styles.css">
     <link rel="stylesheet" href="public/css/landing.css">
     <link rel="stylesheet" href="public/css/footer.css">
     <link rel="stylesheet" href="public/css/marquee.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <style>
-        body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-        }
-
-        .content-wrap {
-            flex-grow: 1;
-        }
-    </style>
 </head>
 
 <body>
@@ -32,7 +21,7 @@
         <section class="hero">
             <div class="hero-container">
                 <h1 class="hero-title">
-                    AIDAY <br>
+                    <img src="public/images/aiday-logo.png" width="280px" height="auto" alt="Logo Ai Day" /> <br>
                     Los Reyunos 2025
                 </h1>
                 <p class="hero-subtitle">
@@ -43,19 +32,15 @@
             <div class="container-stats">
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <div class="stat-number">3</div>
-                        <div class="stat-label">Días</div>
-                    </div>
-                    <div class="stat-card">
                         <div class="stat-number">2</div>
-                        <div class="stat-label">Pistas</div>
+                        <div class="stat-label">Días</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">+100</div>
                         <div class="stat-label">Participantes</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">24</div>
+                        <div class="stat-number">7</div>
                         <div class="stat-label">Speakers</div>
                     </div>
                 </div>

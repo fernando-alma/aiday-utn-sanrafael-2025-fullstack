@@ -18,6 +18,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100dvh;
+  background-attachment: fixed;
 }
 
 .hero-title {
@@ -31,6 +32,7 @@
   font-size: 1.8rem;
   color: var(#fff);
   margin-bottom: 1.5rem;
+  z-index: 999;
 }
 
 .hero-cta {
@@ -247,8 +249,19 @@
   .hero {
     padding-top: 8rem;
   }
-
   .hero-title {
     font-size: 3rem;
+  }
+  .container-stats {
+    width: 100%;
+  }
+  .stat-card {
+    padding: 0.8rem 1rem;
+  }
+  .stat-number {
+    font-size: 1rem;
+  }
+  .stat-label {
+    font-size: 0.8rem;
   }
 }

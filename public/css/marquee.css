@@ -86,3 +86,9 @@
     rgba(5, 8, 37, 0) 100%
   );
 } */
+
+@media (width < 762px) {
+  .helpers-logos {
+    width: 100%;
+  }
+}

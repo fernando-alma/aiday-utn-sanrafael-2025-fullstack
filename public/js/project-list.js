@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
         firstDashboard.id ||
         "";
       if (!slug) {
-        
         allProjectsGrid.innerHTML =
           "<p>No se pudo determinar el slug del dashboard.</p>";
         return;

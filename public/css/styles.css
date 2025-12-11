@@ -25,26 +25,15 @@ body {
   color: var(--color-text-light);
   min-height: 100vh;
   line-height: 1.6;
-
-  /* 1. Establece un fondo base muy oscuro (azul/negro) */
+  overflow-x: hidden;
   background-color: #020617;
-
-  /* 2. Aplica el gradiente radial para el efecto de "brillo" */
   background-image: radial-gradient(
     at 50% 10%,
-    /* Posición: centro (50%) y un poco abajo del borde superior (10%) */
-      rgba(134, 100, 255, 0.08) 0%,
-    /* Color del centro (un morado/azul neón, muy transparente) */ transparent
-      70% /* Transparente al 70% del radio para un difuminado amplio */
+      rgba(134, 100, 255, 0.08) 0%, transparent
+      70% 
   );
-
-  /* Opcional: asegura que el gradiente se mantenga fijo al hacer scroll */
   background-attachment: fixed;
-
-  /* Opcional: asegura que el fondo cubra toda la altura de la vista */
   min-height: 100vh;
-
-  /* Opcional: color del texto por defecto */
   color: #f8fafc;
 }
 
