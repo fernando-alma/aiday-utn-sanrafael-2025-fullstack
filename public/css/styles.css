@@ -21,31 +21,31 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;
-  
+
   color: var(--color-text-light);
   min-height: 100vh;
   line-height: 1.6;
-  padding-bottom: 80px; /* Space for fixed bottom nav on mobile */
 
-    /* 1. Establece un fondo base muy oscuro (azul/negro) */
-    background-color: #020617; 
-    
-    /* 2. Aplica el gradiente radial para el efecto de "brillo" */
-    background-image: 
-        radial-gradient(
-            at 50% 10%, /* Posición: centro (50%) y un poco abajo del borde superior (10%) */
-            rgba(134, 100, 255, 0.08) 0%, /* Color del centro (un morado/azul neón, muy transparente) */
-            transparent 70% /* Transparente al 70% del radio para un difuminado amplio */
-        );
-        
-    /* Opcional: asegura que el gradiente se mantenga fijo al hacer scroll */
-    background-attachment: fixed;
-    
-    /* Opcional: asegura que el fondo cubra toda la altura de la vista */
-    min-height: 100vh; 
-    
-    /* Opcional: color del texto por defecto */
-    color: #f8fafc; 
+  /* 1. Establece un fondo base muy oscuro (azul/negro) */
+  background-color: #020617;
+
+  /* 2. Aplica el gradiente radial para el efecto de "brillo" */
+  background-image: radial-gradient(
+    at 50% 10%,
+    /* Posición: centro (50%) y un poco abajo del borde superior (10%) */
+      rgba(134, 100, 255, 0.08) 0%,
+    /* Color del centro (un morado/azul neón, muy transparente) */ transparent
+      70% /* Transparente al 70% del radio para un difuminado amplio */
+  );
+
+  /* Opcional: asegura que el gradiente se mantenga fijo al hacer scroll */
+  background-attachment: fixed;
+
+  /* Opcional: asegura que el fondo cubra toda la altura de la vista */
+  min-height: 100vh;
+
+  /* Opcional: color del texto por defecto */
+  color: #f8fafc;
 }
 
 /* General Layout/Container */
@@ -74,113 +74,6 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-/* --- Landing Page / Home Styles --- */
-
-/* Hero Section */
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 6rem 1rem 3rem;
-  
-
- /*
-    IMPORTANTE SOBRE LA RUTA:
-    1. Se usan barras normales (/).
-    2. Si tu servidor sirve desde la carpeta 'public', la ruta empieza con '/' y omite 'public'.
-    Ruta corregida: /images/Fondos/fondo.jpg
-  */
-  background-image: url('/public/images/fondos/fondo.jpg');
-
-  /* 'cover' escala la imagen para que llene todo el contenedor sin deformarse,
-     recortando los bordes si es necesario. Es lo estándar para heros. */
-  background-size: cover;
-
-  /* Centra la imagen tanto horizontal como verticalmente dentro del hero */
-  background-position: center center;
-
-  /* Asegura que la imagen no se repita estilo mosaico */
-  background-repeat: no-repeat;
-
-  /* OPCIONAL: Si tu hero no tiene contenido (texto) dentro que le de altura,
-     necesitarás darle una altura mínima para que se vea la imagen.
-     Descomenta la línea siguiente si lo necesitas: */
-  /* min-height: 60vh; */ /* 60% del alto de la pantalla */
-
-}
-
-.hero-title {
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-.hero-subtitle {
-  font-size: 1.2rem;
-  color: var(--color-text-dim);
-  margin-bottom: 1.5rem;
-}
-
-.hero-cta {
-  background: linear-gradient(
-    135deg,
-    var(--color-primary) 0%,
-    var(--color-secondary) 100%
-  );
-  color: var(--color-text-light);
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.hero-cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(168, 85, 247, 0.3);
-}
-
-/* Stats Section */
-.stats-section {
-  padding: 1rem 1rem 3rem;
-  text-align: center;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.stat-card {
-  background: var(--color-card-bg);
-  border-radius: 10px;
-  padding: 1rem 0.5rem;
-  border: 1px solid var(--color-border);
-}
-
-.stat-number {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--color-accent);
-  line-height: 1;
-}
-
-.stat-label {
-  font-size: 0.8rem;
-  color: var(--color-text-dim);
-  margin-top: 0.25rem;
 }
 
 /* Features Section */
@@ -289,7 +182,7 @@ section {
 
 /* Community Section */
 .community-section {
-  padding: 3rem 0;
+  padding: 3rem 0 0;
 }
 .community-header {
   text-align: center;
@@ -395,14 +288,18 @@ section {
 /* --- AI COMMUNITY CTA --- */
 
 .ai-community-full {
-    background: linear-gradient(to right, #ff00cc, #333399); /* Un gradiente estilo la imagen */
-    padding: 4rem 2rem;
-    text-align: center;
-    color: var(--color-text-light);
-    margin: 3rem 0;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
+  background: linear-gradient(
+    to right,
+    #ff00cc,
+    #333399
+  ); /* Un gradiente estilo la imagen */
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--color-text-light);
+  margin-top: 3rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .ai-community-full-content {
@@ -417,15 +314,22 @@ section {
 }
 
 .ai-community-title {
-    font-size: 2.2rem;
-    font-weight: 800;
-    margin-bottom: 0.8rem;
-    color: var(--color-primary); /* fallback for browsers that don't support clipping */
-    background: linear-gradient(135deg, var(--color-text-light) 0%, var(--color-secondary) 50%, var(--color-primary) 100%);
-    background-clip: text; /* unprefixed attempt */
-    -webkit-background-clip: text;
-    color: transparent; /* unprefixed transparent */
-    -webkit-text-fill-color: transparent;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+  color: var(
+    --color-primary
+  ); /* fallback for browsers that don't support clipping */
+  background: linear-gradient(
+    135deg,
+    var(--color-text-light) 0%,
+    var(--color-secondary) 50%,
+    var(--color-primary) 100%
+  );
+  background-clip: text; /* unprefixed attempt */
+  -webkit-background-clip: text;
+  color: transparent; /* unprefixed transparent */
+  -webkit-text-fill-color: transparent;
 }
 
 .ai-community-subtitle {
@@ -584,15 +488,6 @@ section {
 
   body {
     padding-bottom: 0;
-  }
-
-  /* Hero adjustments */
-  .hero {
-    padding-top: 8rem;
-  }
-
-  .hero-title {
-    font-size: 3rem;
   }
 
   /* Features Grid (desktop) */

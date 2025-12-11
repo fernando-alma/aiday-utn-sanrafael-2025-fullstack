@@ -38,12 +38,9 @@
                 <p class="hero-subtitle">
                     Dos días para conectar talento, empresas e Inteligencia Artificial en el corazón de Los Reyunos.
                 </p>
-                <a href="register" class="hero-cta">Quiero participar</a>
             </div>
-        </section>
 
-        <section class="stats-section">
-            <div class="container">
+            <div class="container-stats">
                 <div class="stats-grid">
                     <div class="stat-card">
                         <div class="stat-number">3</div>
@@ -54,7 +51,7 @@
                         <div class="stat-label">Pistas</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">100+</div>
+                        <div class="stat-number">+100</div>
                         <div class="stat-label">Participantes</div>
                     </div>
                     <div class="stat-card">
@@ -63,6 +60,8 @@
                     </div>
                 </div>
             </div>
+
+        </section>
         </section>
 
         <hr style="border-color: rgba(255,255,255,0.1); max-width: 1000px; margin: 0 auto; opacity: 0.3;">
