@@ -4,6 +4,8 @@ const CURRENT_SLUG = "hola";
 document.addEventListener("DOMContentLoaded", () => {
   const allProjectsGrid = document.getElementById("allProjectsGrid");
   const paginationControls = document.getElementById("paginationControls");
+  const searchBar = document.getElementById("search-bar");
+  console.log(searchBar)
   const initLoader = loader()
   initLoader.show();
   

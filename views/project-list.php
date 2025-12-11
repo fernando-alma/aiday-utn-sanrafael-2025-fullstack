@@ -15,7 +15,7 @@
         <div class="projects-container container"> 
             <h1 class="projects-title section-title">Catálogo de Proyectos</h1>
 
-            <div class="search-bar">
+            <div class="search-bar" id="search-bar">
             <div class="position: relative;">
                 <input
                 id="q"
@@ -28,6 +28,7 @@
             </div>
                 <button type="submit" class="search-btn" aria-label="Buscar">Buscar</button>
             </div>
+            
             <div id="projects-overview" class="projects-overview">
                 <div class="projects-grid" id="allProjectsGrid">
                     <p>Cargando proyectos...</p>
