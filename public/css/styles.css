@@ -99,47 +99,6 @@ section {
   color: var(--color-text-dim);
 }
 
-/* Schedule Section (Cronograma) */
-.schedule-section {
-  padding: 3rem 0;
-}
-.schedule-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  list-style: none;
-  padding-left: 0;
-}
-
-.schedule-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-  padding: 1rem;
-  border-left: 5px solid var(--color-primary);
-}
-
-.schedule-time {
-  font-weight: bold;
-  color: var(--color-accent);
-  flex-shrink: 0;
-  margin-right: 1rem;
-}
-
-.schedule-details {
-  flex-grow: 1;
-}
-
-.schedule-event {
-  font-weight: 600;
-}
-
-.schedule-speaker {
-  font-size: 0.9rem;
-  color: var(--color-text-dim);
-}
 /* Video Responsive Container (For YouTube Embed) */
 .video-responsive-container {
   position: relative;
@@ -277,15 +236,11 @@ section {
 /* --- AI COMMUNITY CTA --- */
 
 .ai-community-full {
-  background: linear-gradient(
-    to right,
-    #ff00cc,
-    #333399
-  ); /* Un gradiente estilo la imagen */
+  background: #020617; /* Un gradiente estilo la imagen */
   padding: 4rem 2rem;
   text-align: center;
   color: var(--color-text-light);
-  margin-top: 3rem;
+
   position: relative;
   overflow: hidden;
   width: 100%;
